@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import clsx from 'clsx'
 import Card from '@mui/material/Card'
 import Typography from '@mui/material/Typography'
@@ -248,16 +248,17 @@ const Customers = (): JSX.Element => {
   return (
     <Card sx={{ width: '90%', maxWidth: 600, marginX: 'auto', mt: '24px' }}>
       <Grid container spacing={2}>
-        <Grid item xs={3}>
+        <Grid item xs={5}>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, marginY: '16px' }}
+            align="left"
+            sx={{ flexGrow: 1, marginY: '16px', paddingLeft: '16px' }}
           >
             Customers
           </Typography>
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={7}>
           <TextField
             style={{ width: '90%' }}
             id="standard-basic"
